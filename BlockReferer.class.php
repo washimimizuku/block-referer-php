@@ -163,7 +163,14 @@ class BlockReferer {
      * @param string $targetUrl Target url.
      * @param string $fallback Fallback url.
      */
-    public static function allBlankMethods($fullUrl, $targetUrl, $fallback='') {
+    public static function allBlankMethods($fullUrl='', $targetUrl='', $fallback='') {
+        if ($fullUrl == '') {
+            $fullUrl = self::getFullUrl();
+        }
+        if ($targetUrl == '') {
+            $targetUrl = self::getTargetUrl($fullUrl);
+        }
+
         $try = 0;
         if (isset($_REQUEST['try'])) {
             $try = $_REQUEST['try'];
