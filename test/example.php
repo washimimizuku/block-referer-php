@@ -4,5 +4,5 @@
     $fullUrl    = BlockReferer::getFullUrl();
     $targetUrl  = BlockReferer::getTargetUrl($fullUrl);
 
-    BlockReferer::allMethods($fullUrl, $targetUrl);
+    BlockReferer::allBlankMethods($fullUrl, $targetUrl);
 ?>
