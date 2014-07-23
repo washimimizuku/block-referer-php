@@ -5,11 +5,11 @@ A PHP lib for blocking referer
 
 Usage:
 
-  <?php
-      require_once('BlockReferer.class.php');
+    <?php
+    require_once('BlockReferer.class.php');
       
-      $fullUrl    = BlockReferer::getFullUrl();
-      $targetUrl  = BlockReferer::getTargetUrl($fullUrl);
+    $fullUrl    = BlockReferer::getFullUrl();
+    $targetUrl  = BlockReferer::getTargetUrl($fullUrl);
       
-      BlockReferer::allBlankMethods($fullUrl, $targetUrl);
-  ?>
+    BlockReferer::allBlankMethods($fullUrl, $targetUrl);
+    ?>
