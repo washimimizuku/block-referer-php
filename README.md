@@ -7,6 +7,10 @@ Usage:
 
     <?php
     require_once('BlockReferer.class.php');
-            
+
     BlockReferer::allBlankMethods();
     ?>
+
+Example:
+
+    http://example.com/test/example.php?http://targeturl.com
