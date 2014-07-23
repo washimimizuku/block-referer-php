@@ -5,13 +5,22 @@
 </head>
 
 <body>
+    <h3>Without BlockReferer</h3>
     <ul>
         <li><a href="./testTarget.php">No BlockReferer</a><br /></li>
         <li><a rel="noreferrer" href="./testTarget.php">With rel="noreferrer"</a><br /></li>
-        <li><a href="./example.php?http://10.0.0.169/~nbarr/block-referer-php/test/testTarget.php">With BlockReferer all cases</a><br /></li>
-        <li><a href="./example.php?http://10.0.0.169/~nbarr/block-referer-php/test/testTarget.php&try=1">With BlockReferer try=1</a><br /></li>
-        <li><a href="./example.php?http://10.0.0.169/~nbarr/block-referer-php/test/testTarget.php&try=2">With BlockReferer try=2</a><br /></li>
-        <li><a href="./example.php?http://10.0.0.169/~nbarr/block-referer-php/test/testTarget.php&try=3">With BlockReferer try=3</a><br /></li>
+    </ul>
+    <h3>With BlockReferer: Blank</h3>
+    <ul>
+        <li><a href="./blankExample.php?http://10.0.0.169/~nbarr/block-referer-php/test/testTarget.php">With Blank BlockReferer all cases</a><br /></li>
+        <li><a href="./blankExample.php?http://10.0.0.169/~nbarr/block-referer-php/test/testTarget.php&try=1">With Blank BlockReferer try=1</a><br /></li>
+        <li><a href="./blankExample.php?http://10.0.0.169/~nbarr/block-referer-php/test/testTarget.php&try=2">With Blank BlockReferer try=2</a><br /></li>
+        <li><a href="./blankExample.php?http://10.0.0.169/~nbarr/block-referer-php/test/testTarget.php&try=3">With Blank BlockReferer try=3</a><br /></li>
+    </ul>
+    <h3>With BlockReferer: Fake</h3>
+    <ul>
+        <li><a href="./fakeExample.php?http://10.0.0.169/~nbarr/block-referer-php/test/testTarget.php">With Fake BlockReferer, no redirects</a><br /></li>
+        <li><a href="./fakeExample.php?http://go.ydigitalmedia.com/br-154-skyoutbound-114-1-TESTEREFERER">With Fake BlockReferer, with redirects</a><br /></li>
     </ul>
 </body>
 </html>
