@@ -28,5 +28,5 @@ Fake Referer Usage:
 
 Example:
 
-(http://example.com/test/example.php?http://targeturl.com)
+[http://example.com/test/example.php?http://targeturl.com](http://example.com/test/example.php?http://targeturl.com)
 
