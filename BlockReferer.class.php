@@ -238,8 +238,10 @@ class BlockReferer {
         $baseUrl = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
         $headerSize = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
 
+        // remove header from response
         $body = substr($response, $headerSize);
 
+        // Add base tag to document, so that relative links in target site work
         $body = substr($body, 0, strpos($body, '<head>') + 6).
                 '<base href="'.$baseUrl.'">'.
                 substr($body, strpos($body, '<head>') + 6);
