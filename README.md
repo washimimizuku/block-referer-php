@@ -6,9 +6,11 @@ A PHP lib for blocking referer
 Blank Referer Usage:
 
 ```php
+<?php
 require_once('BlockReferer.class.php');
 
 BlockReferer::allBlankMethods();
+?>
 ```
 
 Fake Referer Usage:
