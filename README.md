@@ -1,7 +1,7 @@
 block-referer-php
 =================
 
-A PHP lib for blocking referer
+A PHP lib for masking referer. Two strategies are in use: blanking it with javascript and redirects, and faking it with curl.
 
 Blank Referer Usage:
 
